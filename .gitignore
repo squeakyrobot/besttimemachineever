@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+/node_modules
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex
+*.synctex.gz

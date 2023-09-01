@@ -1,0 +1,263 @@
+<html>
+
+<head>
+    <title>Time Machine (beta)</title>
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    <style>
+        body {
+            font-family: verdana;
+            font-size: 9pt;
+        }
+
+        form {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .waitMessage {
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 11pt;
+            color: dimgray;
+        }
+
+        .arrivalCounter {
+            font-family: courier;
+            font-size: 50pt;
+            font-weight: bold;
+        }
+
+        .completeMessage {
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 13pt;
+        }
+
+        .progressBarTable {
+            width: 400;
+            height: 25px;
+            BORDER-RIGHT: thin inset;
+            BORDER-TOP: thin inset;
+            BORDER-LEFT: thin inset;
+            BORDER-BOTTOM: thin inset;
+            BACKGROUND-COLOR: gainsboro;
+        }
+
+        .progressBarRow {
+            background-color: gainsboro;
+        }
+
+        .progressBarCellEmpty {
+            BORDER-TOP-STYLE: none;
+            BORDER-RIGHT-STYLE: none;
+            BORDER-LEFT-STYLE: none;
+            BACKGROUND-COLOR: whitesmoke;
+            BORDER-BOTTOM-STYLE: none;
+        }
+
+        .progressBarCellFilled {
+            background-color: darkblue;
+            BORDER-TOP: whitesmoke thin outset;
+            BORDER-BOTTOM: white thin outset;
+        }
+
+        .progressBarCellFilledLeft {
+            background-color: darkblue;
+            BORDER-LEFT: whitesmoke thin outset;
+            BORDER-TOP: whitesmoke thin outset;
+            BORDER-BOTTOM: white thin outset;
+        }
+
+        .progressBarCellFilledRight {
+            background-color: darkblue;
+            BORDER-RIGHT: whitesmoke thin outset;
+            BORDER-TOP: whitesmoke thin outset;
+            BORDER-BOTTOM: white thin outset;
+        }
+
+        .progressBarCellFilledFirst {
+            background-color: darkblue;
+            BORDER-LEFT: whitesmoke thin outset;
+            BORDER-RIGHT: whitesmoke thin outset;
+            BORDER-TOP: whitesmoke thin outset;
+            BORDER-BOTTOM: white thin outset;
+        }
+    </style>
+    <script src="https://web.archive.org/web/20080209222354js_/http://www.google-analytics.com/urchin.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-371888-1";
+        urchinTracker();
+    </script>
+    <script language="javascript">
+        var m_objEndTime = null;
+        var m_strCounterDisplay = new String();
+
+        function TravelThroughTime() {
+            var distSelect = document.getElementById("distance");
+            var intDistance = distSelect.options[distSelect.selectedIndex].value;
+
+            CreateProgressBar(intDistance);
+
+            m_objEndTime = new Date();
+            m_objEndTime.setTime(m_objEndTime.getTime() + intDistance * 1000);
+
+            document.getElementById("controlPanel").style.display = 'none';
+            document.getElementById("journeyComplete").style.display = 'none';
+            document.getElementById("timeWarp").style.display = '';
+
+
+
+            setTimeout('TimeWarpLoop()', 250);
+        }
+
+        function CreateProgressBar(intIncrements) {
+            var objTable = document.getElementById("progressBar");
+            var objTBody = document.createElement("TBODY");
+            var objRow = document.createElement("TR");
+
+            objRow.className = "progressBarRow";
+            objTable.setAttribute("Increments", intIncrements);
+            objTable.setAttribute("CellsFilled", "-1");
+
+            for (var i = 0; i < intIncrements; i++) {
+                var objCell = document.createElement("TD");
+                objCell.id = "__pbcell_" + i;
+                objCell.className = "progressBarCellEmpty";
+
+                var objSpacer = document.createElement("IMG");
+                objSpacer.src = "./Images/spacer.gif";
+                objSpacer.width = "1";
+                objSpacer.height = "1";
+                objCell.appendChild(objSpacer);
+                objRow.appendChild(objCell);
+            }
+
+            objTBody.appendChild(objRow);
+            objTable.appendChild(objTBody);
+        }
+
+
+        function TimeWarpLoop() {
+            var currentTime = new Date();
+
+            if (m_objEndTime > currentTime) {
+                var thisTime = new Date(m_objEndTime - currentTime);
+
+                //Update the timer
+                var seconds = thisTime.getSeconds();
+                var minutes = thisTime.getMinutes();
+
+                if (seconds < 10) seconds = "0" + seconds;
+                if (minutes < 10) minutes = "0" + minutes;
+
+                document.getElementById("arrivalCountDown").innerHTML = minutes + ":" + seconds;
+
+                //Update the progress bar
+                var objTable = document.getElementById("progressBar");
+                var intNextCellIndex = parseInt(objTable.getAttribute("CellsFilled")) + 1;
+                var objNextCell = document.getElementById("__pbcell_" + intNextCellIndex);
+
+                switch (intNextCellIndex) {
+                    case 0:
+                        objNextCell.className = "progressBarCellFilledFirst";
+                        break;
+                    case 1:
+                        objNextCell.className = "progressBarCellFilledRight";
+                        objNextCell.previousSibling.className = "progressBarCellFilledLeft";
+                        break;
+                    default:
+                        objNextCell.className = "progressBarCellFilledRight";
+                        objNextCell.previousSibling.className = "progressBarCellFilled";
+                        break;
+                }
+
+                //objNextCell.className = "progressBarCellFilled";
+                objTable.setAttribute("CellsFilled", intNextCellIndex);
+
+                setTimeout('TimeWarpLoop()', 1000);
+            }
+            else {
+                CompleteJourney();
+            }
+        }
+
+
+        function CompleteJourney() {
+            document.getElementById("timeWarp").style.display = 'none';
+            document.getElementById("controlPanel").style.display = 'none';
+            document.getElementById("journeyComplete").style.display = '';
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="timeMachineForm" id="timeMachineForm">
+        <div id="controlPanel">
+            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" valign="middle">
+
+                        <table border="0" width="550" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top">
+                                    Enter the distance that you wish to travel and click the "Go" button to be
+                                    transported to the future. Your journey will
+                                    begin immediately so make sure you are prepared.
+                                    <hr size="1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <b>Distance:&nbsp;</b>
+
+                                    <select id="distance">
+                                        <option value="10">10 Seconds</option>
+                                        <option value="20">20 Seconds</option>
+                                        <option value="30" selected>30 Seconds</option>
+                                        <option value="60">1 Minute</option>
+                                        <option value="120">2 Minutes</option>
+                                        <option value="180">3 Minutes</option>
+                                        <option value="240">4 Minutes</option>
+                                        <option value="300">5 Minutes</option>
+                                        <option value="600">10 Minutes</option>
+                                        <option value="900">15 Minutes</option>
+                                    </select>
+                                    &nbsp;
+                                    <input type="button" onclick="TravelThroughTime();" value="Go" />
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="timeWarp" style="display:none">
+            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" valign="middle">
+                        <span class="waitMessage">Please wait while we transport you through time...</span><br><br>
+                        <span id="arrivalCountDown" class="arrivalCounter">&nbsp;</span>
+                        <table id="progressBar" cellpadding="0" cellspacing="0" class="progressBarTable"></table>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="journeyComplete" style="display:none">
+            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" valign="middle">
+                        <span class="completeMessage">Your journey is complete. Welcome to the future!</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
