@@ -18,14 +18,14 @@
 <div class="footer flex justify-between bottom-0 border-t-2 border-neutral mt-2 pt-4">
 	<div class="align-bottom">
 		<a href="/" class="items-center inline-flex" title="BestTimeMachineEver.com">
-			<img src="/images/logo.svg" alt="Logo" class="w-10 mr-3" />
+			<!-- <img src="/images/logo.svg" alt="Logo" class="w-10 mr-3" /> -->
 			<div class="hidden sm:block link link-hover">
 				BestTimeMachineEver<em>.com</em>
 			</div>
 		</a>
 	</div>
 	<div class="flex">
-		<a href="/classic" class="link link-hover p-2">Classic</a>
+		<a href="/classic/TimeMachine.html" class="link link-hover p-2">Classic</a>
 		<a href="/about" class="link link-hover p-2">About</a>
 		<a href="/terms-of-service" class="link link-hover p-2">Terms</a>
 		<a href="/privacy-policy" class="link link-hover p-2">Privacy</a>
