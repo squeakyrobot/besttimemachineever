@@ -37,7 +37,7 @@ export const actions = {
             await resend.emails.send({
                 from: CONTACT_EMAIL,
                 to: CONTACT_EMAIL,
-                subject: `CONTACT FORM: ${subject.toString()}`,
+                subject: `BTME CONTACT FORM: ${subject.toString()}`,
                 text: `From: ${email}\n\n${message.toString()}`,
             });
 
