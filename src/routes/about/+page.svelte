@@ -9,7 +9,7 @@
 >
 	<div class="flex flex-col h-full p-2">
 		<div class="flex-grow overflow-y-auto pl-6 pr-6">
-			<div class="hero mt-20">
+			<!-- <div class="hero mt-20">
 				<div class="hero-content flex-col md:flex-row">
 					<img src="/images/btme-logo.svg" alt="BTME Logo" class="md:w-1/3 w-2/5" />
 					<div class="md:pl-10">
@@ -19,10 +19,10 @@
 						<p class="py-6 text-lg">Some fancy text</p>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<h2 class="text-3xl lg:text-4xl font-bold pt-10">About</h2>
-			<p class="py-6 text-lg">TODO:</p>
+			<p class="py-6 text-lg">Coming Soon</p>
 
 			<h2 class="text-3xl lg:text-4xl font-bold pt-10">Credits & Thanks</h2>
 			<div class="py-6 ml-5 text-lg">
