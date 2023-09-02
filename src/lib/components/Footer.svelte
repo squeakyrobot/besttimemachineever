@@ -30,11 +30,6 @@
 		</a>
 	</div>
 	<div class="flex">
-<<<<<<< HEAD
-=======
-		<!-- <a href="/classic/TimeMachine.html" class="link link-hover p-2">Classic</a> -->
-		<a href="/white-paper.pdf" target="_blank" class="link link-hover p-2">Research</a>
->>>>>>> main
 		<a href="/about" class="link link-hover p-2">About</a>
 		<a href="/white-paper.pdf" target="_blank" class="link link-hover p-2">Research</a>
 		<a href="/terms-of-service" class="link link-hover p-2">Terms</a>
