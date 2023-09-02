@@ -43,11 +43,11 @@
 				}}
 			>
 				<p class="mb-4 text-xl sm:text-2xl md:text-3xl">
-					Select the distance that you wish to travel and click the "Go" button to be transported to
-					the future.
+					Select the distance that you wish to travel and click "Go" to be transported to the
+					future.
 				</p>
-				<p class="mt-4 mb-4 text-lg sm:text-xl md:text-2xl">
-					Your journey will begin immediately so make sure you are prepared.
+				<p class="mt-6 mb-6 text-lg sm:text-xl md:text-2xl">
+					Your journey will begin immediately, make sure you are prepared.
 				</p>
 				<div class="join mt-5 w-full justify-center">
 					<select
@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="flex justify-center">
-					<div class="alert mt-10 max-w-xl flex justify-center bg-base-100 bg-opacity-75">
+					<div class="alert mt-14 max-w-xl flex justify-center bg-base-100 bg-opacity-75">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="stroke-warning shrink-0 h-6 w-6"

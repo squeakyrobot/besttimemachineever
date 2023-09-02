@@ -6,15 +6,18 @@
 	export let policy: string;
 </script>
 
-<div class="w-full lg:w-3/4 max-w-5xl h-full overflow-hidden bg-base-100 pl-4 pr-4">
-	<div class="flex flex-col overflow-hidden h-full p-2 w-full">
+<div
+	class="w-full lg:w-3/4 max-w-6xl h-full overflow-hidden bg-base-100"
+	in:fade={{ duration: 400 }}
+>
+	<div class="flex flex-col h-full pl-6 pr-6">
 		<Header />
 		<div class="flex-grow overflow-y-auto">
-			<article class="prose max-w-none">
+			<article class="prose max-w-none pr-4 pl-4">
 				{@html policy}
 			</article>
 		</div>
-		<div class=" bottom-0 mt-2">
+		<div class="bottom-0 mt-2 mb-2">
 			<Footer />
 		</div>
 	</div>

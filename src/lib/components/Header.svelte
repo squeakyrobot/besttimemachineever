@@ -20,13 +20,12 @@
 		</a>
 	{:else}
 		<a href="/" class="items-center inline-flex text-xl m-4">
-			<img src="/images/logo.svg" alt="Logo" class="w-12 mr-3" />
+			<img src="/images/btme-logo.svg" alt="Logo" class="w-6 mr-3" />
 			<div class="pl-2">{title}</div>
 		</a>
 	{/if}
 
 	<div>
 		<!-- TODO: Add Menu-->
-		<!-- <a href="/" class="btn btn-ghost">Home</a> -->
 	</div>
 </div>
