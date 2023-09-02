@@ -17,7 +17,12 @@
 
 <div class="footer flex justify-between bottom-0 border-t-2 border-neutral mt-2 pt-4">
 	<div class="align-bottom">
-		<a href="/" class="items-center inline-flex" title="BestTimeMachineEver.com">
+		<a
+			href="/"
+			class="items-center inline-flex"
+			title="BestTimeMachineEver.com"
+			data-sveltekit-reload
+		>
 			<!-- <img src="/images/logo.svg" alt="Logo" class="w-10 mr-3" /> -->
 			<div class="hidden sm:block link link-hover">
 				BestTimeMachineEver<em>.com</em>
