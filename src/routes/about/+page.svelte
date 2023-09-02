@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
+	import Testimonials from '$lib/components/Testimonials.svelte';
 	import { fade } from 'svelte/transition';
 </script>
 
@@ -31,6 +32,11 @@
 				go very far into the future. We hope to expand on the functionality in the near future as we
 				learn more about the effects of time travel.
 			</p>
+
+			<h2 class="text-3xl lg:text-4xl font-bold pt-10">Testimonials</h2>
+			<div class="py-6 text-lg">
+				<Testimonials />
+			</div>
 
 			<h2 class="text-3xl lg:text-4xl font-bold pt-10">Principles of Operation</h2>
 			<p class="py-6 text-lg">
