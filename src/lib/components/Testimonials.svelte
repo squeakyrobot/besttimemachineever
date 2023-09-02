@@ -4,25 +4,39 @@
 
 <div class="carousel w-full h-40 md:h-80">
 	<div id="item1" class="carousel-item w-full justify-center">
-		<img src="/images/testimonials/sheryl.png" class="object-contain" />
+		<a href="https://bestconversationever.com/view/WlWpIDHJkXioOi" target="_blank">
+			<img src="/images/testimonials/sheryl.png" class="object-contain" />
+		</a>
 	</div>
-	<div id="item2" class="carousel-item w-full">
-		<img src="/images/testimonials/sam.png" class="object-contain" />
+	<div id="item2" class="carousel-item w-full justify-center">
+		<a href="https://bestconversationever.com/view/-ws73TwAScgOrS" target="_blank">
+			<img src="/images/testimonials/sam.png" class="object-contain" />
+		</a>
 	</div>
 	<div id="item3" class="carousel-item w-full justify-center">
-		<img src="/images/testimonials/willis.png" class="object-contain" />
+		<a href="https://bestconversationever.com/view/0kx4_m43w_AgoP" target="_blank">
+			<img src="/images/testimonials/willis.png" class="object-contain" />
+		</a>
 	</div>
 	<div id="item4" class="carousel-item w-full justify-center">
-		<img src="/images/testimonials/navin.png" class="object-contain" />
+		<a href="https://bestconversationever.com/view/lx9a_Te3DPEmhZ" target="_blank">
+			<img src="/images/testimonials/navin.png" class="object-contain" />
+		</a>
 	</div>
 	<div id="item5" class="carousel-item w-full justify-center">
-		<img src="/images/testimonials/luna.png" class="object-contain" />
+		<a href="https://bestconversationever.com/view/GwoCu8SeF-yGU6" target="_blank">
+			<img src="/images/testimonials/luna.png" class="object-contain" />
+		</a>
 	</div>
 	<div id="item6" class="carousel-item w-full justify-center">
-		<img src="/images/testimonials/gramps.png" class="object-contain" />
+		<a href="https://bestconversationever.com/view/2LptSfWme5BOPd" target="_blank">
+			<img src="/images/testimonials/gramps.png" class="object-contain" />
+		</a>
 	</div>
 	<div id="item7" class="carousel-item w-full justify-center">
-		<img src="/images/testimonials/elvis.png" class="object-contain" />
+		<a href="https://bestconversationever.com/view/ndlosC4RxxIOdu" target="_blank">
+			<img src="/images/testimonials/elvis.png" class="object-contain" />
+		</a>
 	</div>
 </div>
 <div class="flex justify-center w-full py-2 gap-2">
