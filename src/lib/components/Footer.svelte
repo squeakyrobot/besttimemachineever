@@ -23,10 +23,10 @@
 			title="BestTimeMachineEver.com"
 			data-sveltekit-reload
 		>
-			<!-- <img src="/images/logo.svg" alt="Logo" class="w-10 mr-3" /> -->
-			<div class="hidden sm:block link link-hover">
+			<div class="hidden sm:block link link-hover p2">
 				BestTimeMachineEver<em>.com</em>
 			</div>
+			<div class="p-2 sm:hidden link link-hover">Home</div>
 		</a>
 	</div>
 	<div class="flex">
