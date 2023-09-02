@@ -1,3 +1,6 @@
+<!-- 
+	Originally from https://svelte.dev/repl/a19df6f013434e01bb990349843af288?version=3.38.2
+ -->
 <script lang="ts">
 	import { onDestroy } from 'svelte';
 	import { tweened } from 'svelte/motion';
