@@ -12,12 +12,12 @@
 	class="w-full lg:w-3/4 max-w-6xl h-full bg-base-100 overflow-hidden"
 	in:fade={{ duration: 400 }}
 >
-	<div class="flex flex-col h-full pl-6 pr-6">
+	<div class="flex flex-col h-full p-2">
 		<Header />
-		<div class="flex-grow overflow-y-auto">
+		<div class="flex-grow overflow-y-auto pl-6 pr-6">
 			<ContactForm formSubmitted={data.formSubmitted} />
 		</div>
-		<div class="bottom-0">
+		<div class="bottom-0 mt-2 mb-2">
 			<Footer />
 		</div>
 	</div>
