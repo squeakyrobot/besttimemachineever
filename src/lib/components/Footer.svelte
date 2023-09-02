@@ -30,11 +30,9 @@
 		</a>
 	</div>
 	<div class="flex">
-		<!-- <a href="/classic/TimeMachine.html" class="link link-hover p-2">Classic</a> -->
-		<a href="/white-paper.pdf" target="_blank" class="link link-hover p-2">Research</a>
 		<a href="/about" class="link link-hover p-2">About</a>
+		<a href="/white-paper.pdf" target="_blank" class="link link-hover p-2">Research</a>
 		<a href="/terms-of-service" class="link link-hover p-2">Terms</a>
 		<a href="/privacy-policy" class="link link-hover p-2">Privacy</a>
-		<!-- <a href="/cookie-policy" class="link link-hover p-2">Cookies</a> -->
 	</div>
 </div>
