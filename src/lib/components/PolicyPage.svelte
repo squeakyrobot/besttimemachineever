@@ -10,10 +10,10 @@
 	class="w-full lg:w-3/4 max-w-6xl h-full overflow-hidden bg-base-100"
 	in:fade={{ duration: 400 }}
 >
-	<div class="flex flex-col h-full pl-6 pr-6">
+	<div class="flex flex-col h-full p-2">
 		<Header />
-		<div class="flex-grow overflow-y-auto">
-			<article class="prose max-w-none pr-4 pl-4">
+		<div class="flex-grow overflow-y-auto pl-6 pr-6">
+			<article class="prose max-w-none">
 				{@html policy}
 			</article>
 		</div>
