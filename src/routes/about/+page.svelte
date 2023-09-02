@@ -95,7 +95,7 @@
 			</div>
 		</div>
 
-		<div class="bottom-0">
+		<div class="bottom-0 mt-2 mb-2">
 			<Footer showVersion={true} />
 		</div>
 	</div>
