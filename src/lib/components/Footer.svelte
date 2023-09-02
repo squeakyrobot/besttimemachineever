@@ -19,18 +19,19 @@
 	<div class="align-bottom">
 		<a
 			href="/"
-			class="items-center inline-flex"
+			class="items-center inline-flex p2"
 			title="BestTimeMachineEver.com"
 			data-sveltekit-reload
 		>
-			<div class="hidden sm:block link link-hover p2">
+			<div class="hidden sm:block link link-hover p-2">
 				BestTimeMachineEver<em>.com</em>
 			</div>
 			<div class="p-2 sm:hidden link link-hover">Home</div>
 		</a>
 	</div>
 	<div class="flex">
-		<a href="/classic/TimeMachine.html" class="link link-hover p-2">Classic</a>
+		<!-- <a href="/classic/TimeMachine.html" class="link link-hover p-2">Classic</a> -->
+		<a href="/white-paper.pdf" target="_blank" class="link link-hover p-2">Research</a>
 		<a href="/about" class="link link-hover p-2">About</a>
 		<a href="/terms-of-service" class="link link-hover p-2">Terms</a>
 		<a href="/privacy-policy" class="link link-hover p-2">Privacy</a>
