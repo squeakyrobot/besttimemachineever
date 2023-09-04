@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="98.387mm" height="98.406mm" version="1.1" viewBox="0 0 98.387 98.406" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-54.056 -101.33)">
-  <circle cx="103.23" cy="150.51" r="49.178" style="fill:#101628"/>
-  <path d="m54.065 150.57v-49.168h98.378v98.336h-98.378z" style="fill:#101628"/>
-  <text x="64.917564" y="168.18553" style="fill:#101628;font-family:Waree;font-size:49.729px;stroke-linecap:round;stroke-width:8.7636" xml:space="preserve"><tspan x="64.917564" y="168.18553" style="fill:#c8cad0;font-family:'Roboto Slab';font-size:49.729px;stroke-width:8.7636">TM</tspan></text>
+  <circle cx="103.25" cy="150.54" r="49.178" style="fill:#101628"/>
+  <path d="m54.059 150.54v-49.168h98.378v98.336h-98.378z" style="fill:#101628"/>
+  <text x="78.492706" y="161.95547" style="fill:#c8cad0;font-family:Waree;font-size:32.128px;stroke-linecap:round;stroke-width:5.6618" xml:space="preserve"><tspan x="78.492706" y="161.95547" style="fill:#c8cad0;font-family:'Roboto Slab';font-size:32.128px;stroke-width:5.6618">TM</tspan></text>
  </g>
+ <circle cx="49.192" cy="49.205" r="35.216" style="fill:none;stroke-linecap:round;stroke-width:3.6119;stroke:#c8cad0"/>
 </svg>
