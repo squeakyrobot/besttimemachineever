@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="98.357mm" height="98.357mm" version="1.1" viewBox="0 0 98.357 98.357" xmlns="http://www.w3.org/2000/svg">
- <g transform="translate(-54.056 -101.33)">
-  <circle cx="103.23" cy="150.51" r="49.178" style="fill:#101628"/>
-  <text x="64.917564" y="168.18553" style="fill:#101628;font-family:Waree;font-size:49.729px;stroke-linecap:round;stroke-width:8.7636" xml:space="preserve"><tspan x="64.917564" y="168.18553" style="fill:#c8cad0;font-family:'Roboto Slab';font-size:49.729px;stroke-width:8.7636">TM</tspan></text>
+<svg width="77.341mm" height="77.341mm" version="1.1" viewBox="0 0 77.341 77.341" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-64.167 -112.3)">
+  <circle cx="102.84" cy="150.97" r="38.671" style="fill:#101628;stroke-width:.78634"/>
+  <text x="78.083221" y="162.3871" style="fill:#c8cad0;font-family:Waree;font-size:32.128px;stroke-linecap:round;stroke-width:5.6618" xml:space="preserve"><tspan x="78.083221" y="162.3871" style="fill:#c8cad0;font-family:'Roboto Slab';font-size:32.128px;stroke-width:5.6618">TM</tspan></text>
+ </g>
+ <g transform="translate(-10.111 -10.966)">
+  <circle cx="48.782" cy="49.637" r="35.216" style="fill:none;stroke-linecap:round;stroke-width:3.6119;stroke:#c8cad0"/>
  </g>
 </svg>
