@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { PUBLIC_ORIGIN_URL } from '$env/static/public';
 
-	const origin = $page.url.origin.includes('prerender')
-		? 'https://besttimemachineever.com'
-		: $page.url.origin;
+	const origin = $page.url.origin.includes('prerender') ? PUBLIC_ORIGIN_URL : $page.url.origin;
 
 	export let ogImage = $page.data.pageOgImage || '/images/btme-og.jpg';
 	export let url = $page.route.id;
