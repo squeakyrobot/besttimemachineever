@@ -5,7 +5,7 @@
 		? 'https://besttimemachineever.com'
 		: $page.url.origin;
 
-	export let ogImage = $page.data.pageOgImage || '/images/btme-logo.png';
+	export let ogImage = $page.data.pageOgImage || '/images/btme-og.jpg';
 	export let url = $page.route.id;
 	export let title = $page.data.pageTitle || 'Best Time Machine Ever';
 	export let description =
