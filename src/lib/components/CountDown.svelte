@@ -47,18 +47,18 @@
 
 <svg viewBox="-50 -50 100 100" width="250" height="250">
 	<title>Remaining seconds: {count}</title>
-	<g class="fill-neutral" fill-opacity=".5" stroke="currentColor" stroke-width="3">
+	<g class="fill-neutral" fill-opacity=".5" stroke="currentColor" stroke-width="4">
 		<circle stroke="currentColor" r="46" />
 		<path
 			class="stroke-primary"
 			d="M 0 -46 a 46 46 0 0 0 0 92 46 46 0 0 0 0 -92"
 			pathLength="1"
 			stroke-dasharray="1"
-			stroke-dashoffset={$offset}
+			stroke-dashoffset="-{$offset}"
 		/>
 	</g>
 	<g class="fill-primary" stroke="none">
-		<g transform="rotate({$rotation})">
+		<g transform="rotate(-{$rotation})">
 			<g transform="translate(0 -46)">
 				<circle r="4" />
 			</g>
