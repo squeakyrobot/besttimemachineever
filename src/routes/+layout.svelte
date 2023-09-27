@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div
-	class="grid place-items-center h-[calc(100dvh)] bg-no-repeat bg-cover w-full"
+	class="grid place-items-center h-screen] bg-no-repeat bg-cover w-full"
 	style="background-image: url(/images/space-bg.jpg);"
 >
 	<slot />
