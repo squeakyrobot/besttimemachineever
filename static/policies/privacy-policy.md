@@ -36,10 +36,5 @@ Best Time Machine Ever is a platform that facilitates time travel experiences. H
 
 We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page, and the "Effective Date" at the top of the policy will be updated to reflect the most recent version. We encourage you to check this page regularly for updates.
 
-## Contact Us
-
-If you have any questions or concerns about our Privacy Policy, please contact us using the information provided below.
-
-- **Contact Link**: [https://besttimemachineever.com/contact](/contact)
 
 Thank you for choosing Best Time Machine Ever for your time travel adventures.

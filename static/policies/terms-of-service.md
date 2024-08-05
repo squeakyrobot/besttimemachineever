@@ -33,13 +33,8 @@ The Company reserves the right to modify, update, or enhance any aspect of the S
 ### 4.2. Terms Modifications
 The Company may revise these Terms from time to time. Any changes will be effective immediately upon posting the updated Terms on our website. It is your responsibility to review these Terms regularly, as your continued use of the Service after any changes will constitute acceptance of the modified Terms.
 
-## 5. Contact Information
 
-If you have any questions or concerns about these Terms of Service, please contact us using the information provided below.
-
-- **Contact Link**: [https://besttimemachineever.com/contact](/contact)
-
-## 6. Conclusion
+## 5. Conclusion
 
 By using the Best Time Machine Ever Service, you acknowledge that you have read, understood, and agreed to these Terms of Service. If you do not agree with these Terms, please refrain from using the Service.
 
