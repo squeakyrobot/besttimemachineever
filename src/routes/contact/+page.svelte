@@ -15,7 +15,8 @@
 	<div class="flex flex-col h-full p-2">
 		<Header />
 		<div class="flex-grow overflow-y-auto pl-6 pr-6">
-			<ContactForm formSubmitted={data.formSubmitted} />
+			Contact form disabled due to excessive spamming
+			<!-- <ContactForm formSubmitted={data.formSubmitted} /> -->
 		</div>
 		<div class="bottom-0 mt-2 mb-2">
 			<Footer />

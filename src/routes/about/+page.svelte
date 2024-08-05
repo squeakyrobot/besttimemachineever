@@ -99,12 +99,12 @@
 				</ul>
 			</div>
 
-			<h2 class="text-3xl lg:text-4xl font-bold pt-10">Contact</h2>
+			<!-- <h2 class="text-3xl lg:text-4xl font-bold pt-10">Contact</h2>
 			<div class="py-6 ml-2 text-lg">
 				You can get in touch with us by using our <a href="/contact" class="link link-primary"
 					>Contact Form</a
 				>.
-			</div>
+			</div> -->
 		</div>
 
 		<div class="bottom-0 mt-2 mb-2">
